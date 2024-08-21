@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
   imagenes:string[]=[
-    '/public/imagenes/gorraUno.webp',
-    '/public/imagenes/gorraDos.webp',
-    '/public/imagenes/gorraTres.webp',
+    'imagenes/gorraUno.png',
+    'imagenes/gorraDos.png',
+    'imagenes/gorraTres.png',
   ]
 }
