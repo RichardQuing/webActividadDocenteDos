@@ -10,5 +10,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  imagenes:string[]=[
+    '/public/imagenes/gorraUno.webp',
+    '/public/imagenes/gorraDos.webp',
+    '/public/imagenes/gorraTres.webp',
+    '/public/imagenes/amazonLogo.png'
+  ]
 }

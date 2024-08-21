@@ -1,14 +1,17 @@
 <div class="container-fluid">
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true"  style="width: 50%;">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img [src]="imagenes[0]" class="d-block w-100" alt="gorra">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img [src]="imagenes[1]" class="d-block w-100" alt="gorra">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img [src]="imagenes[2]" class="d-block w-100" alt="gorra">
+            </div>
+            <div class="carousel-item">
+                <img [src]="imagenes[3]" class="d-block w-100" alt="gorra">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
