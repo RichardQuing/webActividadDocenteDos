@@ -14,6 +14,5 @@ export class HomeComponent {
     '/public/imagenes/gorraUno.webp',
     '/public/imagenes/gorraDos.webp',
     '/public/imagenes/gorraTres.webp',
-    '/public/imagenes/amazonLogo.png'
   ]
 }
