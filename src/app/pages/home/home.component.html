@@ -1,26 +1,101 @@
-<div class="container-fluid text-center">
+
+<div class="fondo-oscuro" style="background-image: url(/imagenes/fondo.png);">
     <div class="container" style="width: 50%;">
-        <h1>Galería de Gorras</h1>
+        <h1 style="color: aliceblue;text-align: center;"></h1>
         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img [src]="imagenes[0]" class="d-block w-100" alt="gorra1">
-                </div>
-                <div class="carousel-item">
-                    <img [src]="imagenes[1]" class="d-block w-100" alt="gorra2">
-                </div>
-                <div class="carousel-item">
-                    <img [src]="imagenes[2]" class="d-block w-100" alt="gorra3">
+                <div *ngFor="let gorra of gorras" [class]="gorra.id==1 ? 'carousel-item active' : ' carousel-item'">
+                    <img [src]="gorra.imagen" class="d-block w-100" [alt]="gorra.nombre">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+    </div>
+</div>
+<div class="container text-center mt-4">
+    <br>
+    <br>
+    <h1 style="color: aliceblue;font-family: 'Courier New', Courier, monospace;font-size: 47px;font-style: italic;">LO
+        MÁS DESTACADO</h1>
+        <hr style="border-color: #444; margin: 30px 0;">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card" style="background-color: black; color: aliceblue;">
+                    <img src="imagenes/tarjetaUno.png" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;">WxB Edition Two
+                        </h5>
+                        <p class="card-text">W merch</p>
+                        <h6>$ 67.44</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background-color: black; color: aliceblue;">
+                    <img src="imagenes/tarjetaTres.png" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;">Estilo Urbano
+                        </h5>
+                        <p class="card-text">La Gorra Perfecta para Cada Ocasión</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background-color: black; color: aliceblue;">
+                    <img src="imagenes/tarjetaDos.png" class="card-img-top" alt="Imagen 3">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;">Edición Limitada
+                        </h5>
+                        <p class="card-text">Las Gorras que Definen la Temporada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h1
+    style="color: aliceblue;font-family: 'Courier New', Courier, monospace;font-size: 47px;font-style: italic;text-align: center;">
+    OFERTAS</h1>
+    <hr style="border-color: #444; margin: 30px 0;">
+<br>
+<br>
+
+<div id="carouselExample" class="carousel slide">
+    <div class="container" style="width: 50%;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/ofertaUno.png" class="d-block w-100" alt="gorra1">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/ofertaTres.png" class="d-block w-100" alt="gorra2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/ofertaDos.png" class="d-block w-100" alt="gorra3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </div>

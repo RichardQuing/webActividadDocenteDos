@@ -1,0 +1,23 @@
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class=" col-md-6 text-center">
+            <img [src]="gorra?.imagen" class="card-img-top" [alt]="gorra?.nombre">
+        </div>
+
+        <div class="containerS col-md-6">
+            <h5 class="card-title" style="text-align: center;font-size: 55px; font-weight: 900;color: rgb(200, 200, 200);"><p> {{gorra?.nombre}}</p></h5>
+            <br>
+            <p style="font-size: 25px; font-weight: 750;"> Precio:</p>
+            <p class="card-text">$ {{gorra?.precio}}</p>
+            <p>Impuesto incluido.</p>
+            <br>
+            <p style="font-size: 25px; font-weight: 750;">Descripcion: </p>
+            <p class="card-text">{{gorra?.descripcion}}</p>
+
+            <br>
+            <a class="boton" style="align-items: center;display: flex;justify-content: center;">COMPRAR</a>
+        </div>
+    </div>
+</div>
