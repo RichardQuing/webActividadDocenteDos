@@ -4,12 +4,12 @@
     <br>
     <br>
     <br>
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center" >
         <div *ngFor="let gorra of gorras" class="card m-2" style="width: 18rem; background-color: black; color: aliceblue; cursor: pointer;" (click)="onClickGorra(gorra)">
             <img [src]="gorra.imagen" class="card-img-top img-fluid rounded tarjeta" [alt]="gorra.nombre">
             <div class="card-body">
-                <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;">{{gorra.nombre}}</h5>
-                <h6>${{gorra.precio}}</h6>
+                <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;font-weight: 200;color: rgb(200, 200, 200);">{{gorra.nombre}}</h5>
+                <h6 style="font-weight: 800;font-size: 20px;">${{gorra.precio}}</h6>
             </div>
         </div>
     </div>
