@@ -10,3 +10,11 @@
 .table td {
     vertical-align: middle; 
 }
+.palabraPro{
+    font-size: 55px; font-weight: 900;color: rgb(152, 152, 152);
+}
+@media (max-width: 768px) {
+    .palabraPro{
+        font-size: 30px;
+    }
+}

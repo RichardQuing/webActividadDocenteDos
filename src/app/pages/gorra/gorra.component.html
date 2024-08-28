@@ -1,31 +1,25 @@
-
 <div class="container mt-5">
     <div class="row">
-
-        <div class=" col-md-6 text-center" style="background-image: url(/imagenes/fondoProducto.png);">
+        <h5 class="card-title" style="text-align: center; font-size: 55px; font-weight: 900; color: rgb(200, 200, 200);">
+            <p>{{gorra?.nombre}}</p>
+        </h5>
+        <br><br>
+        <div class="col-md-6 text-center" style="background-image: url(/imagenes/fondoProducto.png);">
             <img [src]="gorra?.imagen" class="card-img-top" [alt]="gorra?.nombre">
         </div>
-
-        <div class="containerS col-md-6">
-            <h5 class="card-title" style="text-align: center;font-size: 55px; font-weight: 900;color: rgb(200, 200, 200);"><p> {{gorra?.nombre}}</p></h5>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p style="font-size: 25px; font-weight: 750;"> Precio:</p>
-            <p class="card-text">$ {{gorra?.precio}}</p>
-            <p>Impuesto incluido.</p>
-            <br>
-            <p style="font-size: 25px; font-weight: 750;">Descripcion: </p>
-            <p class="card-text">{{gorra?.descripcion}}</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
-            <a class="boton" style="align-items: center;display: flex;justify-content: center;font-weight: 700;">COMPRAR</a>
+        <div class="col-md-6 d-flex flex-column justify-content-between containerS">
+            <div>
+                <br><br><br>
+                <p style="font-size: 25px; font-weight: 750;">Precio:</p>
+                <p class="card-text">$ {{gorra?.precio}}</p>
+                <p>Impuesto incluido.</p>
+                <br>
+                <p style="font-size: 25px; font-weight: 750;">Descripción:</p>
+                <p class="card-text">{{gorra?.descripcion}}</p>
+                <br>
+                <br>
+            </div>
+            <a class="boton" style="align-items: center; display: flex; justify-content: center; font-weight: 700; margin-top: auto;">COMPRAR</a>
         </div>
     </div>
 </div>

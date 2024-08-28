@@ -50,3 +50,11 @@
 .card:hover .card-img-top {
   transform: scale(1.07); /* Aumenta el tamaño de la imagen ligeramente en el hover */
 }
+.destacado{
+  color: aliceblue; font-family: 'Courier New', Courier, monospace; font-size: 47px; font-style: italic;
+}
+@media (max-width: 990px){
+    .destacado{
+        font-size: 30px;
+    }
+}
