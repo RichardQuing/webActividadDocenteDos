@@ -22,6 +22,13 @@ export class LoginComponent {
     })
   }
 
+  onClickRegister(): void {
+    this.userService.register(this.form.value)
+    .then((response) => {
+      console.log(response);
+    })
+    .catch(error => console.log(error));
+  }
 
   onClickLogin(): void {
     if (this.form.valid) {
